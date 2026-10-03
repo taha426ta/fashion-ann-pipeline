@@ -9,9 +9,9 @@ RAW_DIR = Path("data/raw")
 OUT_DIR = Path("data/processed")
 
 
-# Scale uint8 pixel values [0, 255] to float32 in [0, 1]
+# Z-score standardization with the Fashion-MNIST training mean (0.2860) and std (0.3530)
 def normalize(x):
-    return x.astype("float32") / 255.0
+    return (x.astype("float32") / 255.0 - 0.2860) / 0.3530
 
 
 def main():
