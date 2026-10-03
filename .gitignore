@@ -1,0 +1,17 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# DVC internals
+.dvc/cache
+.dvc/tmp
+.dvc/config.local
+
+# Large artifacts are versioned by DVC, never by Git
+*.h5
+
+# Credentials / tokens must never be committed
+gdrive-user-credentials.json
+client_secret*.json
