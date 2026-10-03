@@ -1,6 +1,7 @@
 preprocess:
   test_size: 0.1      # fraction of the training set held out for validation
   seed: 42
+  normalization: minmax   # minmax -> [0, 1] | standard -> z-score | symmetric -> [-1, 1]
 
 train:
   dense_units: 256
