@@ -1,4 +1,4 @@
-# Fashion-MNIST ANN pipline
+# Fashion-MNIST ANN pipeline
 
 End-to-end ML versioning with Git, DVC and Google Drive.
 
