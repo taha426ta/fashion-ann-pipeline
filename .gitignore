@@ -16,3 +16,4 @@ __pycache__/
 gdrive-user-credentials.json
 client_secret*.json
 /models
+/confusion_matrix.png
