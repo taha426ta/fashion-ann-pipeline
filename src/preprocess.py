@@ -9,9 +9,9 @@ RAW_DIR = Path("data/raw")
 OUT_DIR = Path("data/processed")
 
 
-# Scale uint8 pixel values [0, 255] to float32 in [0, 1]
+# Scale uint8 pixel values [0, 255] to float32 in [-1, 1]
 def normalize(x):
-    return x.astype("float32") / 255.0
+    return x.astype("float32") / 127.5 - 1.0
 
 
 def main():
